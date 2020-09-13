@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Sova Fušara</title>
+    <!-- Mobile Specific Metas
+    ================================================== -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <!-- CSS
+    ================================================== -->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Template styles-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive styles-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Animation -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- Colorbox -->
+    <link rel="stylesheet" href="css/colorbox.css">
+  </head>
+
+  <body>    
+    <div class="body-inner">
+
+      <!-- Header start -->
+      <header id="header" class="header-one">
+        <div class="container">
+          <div class="row">
+            <div class="logo-area clearfix">
+              <div class="logo col-xs-12 col-md-3">
+                <a href="index.php">
+                  <img src="images/logo.png" alt="">
+                </a>
+                
+              </div><!-- logo end -->           
+            </div><!-- logo area end -->
+
+          </div><!-- Row end -->
+        </div><!-- Container end -->
+
+        <nav class="site-navigation navigation navdown">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8">
+                <div class="site-nav-inner pull-left">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+                      <li class="dropdown active"><a href="index.php">Početna</a></li>
+                      <li><a href="oglasi.php">Oglasi</a></li>
+                      <li><a href="Onama.php">O Nama</a></li>
+                      <li><a href="contact.php">Kontakt</a></li>                    
+                    </ul>
+                    <!--/ Nav ul end -->
+                  </div>
+                  <!--/ Collapse end -->                
+                </div><!-- Site Navbar inner end -->              
+              </div>
+              <!--/ Col end -->
+              <div class="col-sm-4">
+                <ul class="nav navbar-nav">
+                  <li><a href="register.php">Registracija</a></li>
+                  <li>                  
+                    <button class="open-button" onclick="openForm()">Login</button>
+
+                    <div class="form-popup" id="myForm">
+                      <form action="/action_page.php" class="form-container">
+                        <h1>Login</h1>
+
+                        <input type="text" placeholder="Email" name="email" required>
+                        
+                        <input type="password" placeholder="Lozinka" name="psw" required>
+
+                        <button type="submit" class="btn">Nastavi</button>
+                        <button type="button" class="btn" onclick="closeForm()">Zatvori</button>
+                        <button onclick="window.open('http://www.google.com','_blank')"
+                              type="submit" 
+                              class="btn">Koristi društvenu mrežu</button>
+                      </form>
+                    </div>  
+                  </li>
+                </ul>
+              </div>            
+            </div>
+            <!--/ Row end -->
+          </div>
+          <!--/ Container end -->
+        </nav>
+        <!--/ Navigation end -->
+      </header>
+      <!--/ Header end -->
+
+      <div>
+        <form action="action_page.php">
+          <div class="container">
+            <h1>Registracija novog člana</h1>
+            <p>Molimo unesite sljedeće podatke</p>
+            <hr>
+             
+              <label for="email"><b>Email</b></label><br>
+              <input type="email" placeholder="Unesi email" name="email" id="email" required>
+              <hr>
+
+              <label for="userName"><b>Korisničko ime</b></label><br>
+              <input type="text" placeholder="Unesi korisničko ime" name="userName" id="userName" required>    
+              <hr>            
+
+              <label for="psw"><b>Lozinka</b></label><br>
+              <input type="password" placeholder="Unesi lozinku" name="psw" id="psw" required>              
+              <hr>
+
+              <label for="psw-repeat"><b>Ponovi lozinku</b></label><br>
+              <input type="password" placeholder="Ponovi lozinku" name="psw-repeat" id="psw-repeat" required>
+              <hr>
+           
+            <p>Stvaranjem računa pristajete na naše <a href="#"><strong>uvjete i pravila privatnosti</strong></a>.</p>
+            <button type="submit" class="open-button">Registriraj me</button>
+          </div>
+          
+        </form>
+      </div>
+
+      <footer style="text-align: center;">
+        Copyright by SovaFoošara , 2020.
+      </footer>
+      
+      <!-- Javascript Files -->
+
+      <!-- initialize jQuery Library -->
+      <script type="text/javascript" src="js/jquery.js"></script>
+      <!-- Bootstrap jQuery -->
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <!-- Owl Carousel -->
+      <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+      <!-- Color box -->
+      <script type="text/javascript" src="js/jquery.colorbox.js"></script>
+      <!-- Isotope -->
+      <script type="text/javascript" src="js/isotope.js"></script>
+      <script type="text/javascript" src="js/ini.isotope.js"></script>
+      <!-- Login button -->
+      <script type="text/javascript" src="js/loginButton.js"></script>
+      <!-- Template custom -->
+      <script type="text/javascript" src="js/custom.js"></script>
+    </div><!-- Body inner end -->
+  </body>
+</html>
